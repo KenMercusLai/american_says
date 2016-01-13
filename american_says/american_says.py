@@ -4,6 +4,8 @@ from aqt import mw
 from aqt.utils import showInfo
 # import all of the Qt GUI library
 from aqt.qt import *
+import requests
+from pyquery import PyQuery as pq
 
 # We're going to add a menu item below. First we want to create a function to
 # be called when the menu item is activated.
