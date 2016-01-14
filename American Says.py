@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-  
 # import the main window object (mw) from ankiqt
 from aqt import mw
 # import the "show info" tool from utils.py
@@ -27,7 +28,7 @@ class AmericanSays:
 
     def get_selected(self, view):
         """Copy selected text. only the first word will be chosen"""
-        return view.page().selectedText().split()[0]
+        return view.page().selectedText().encode('utf8', 'ignore').split()[0]
 
     def lookup_character_action(self, view):
         """Lookup single character action"""
